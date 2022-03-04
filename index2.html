@@ -233,9 +233,9 @@
         </div>
 
         <!-- product section -->
-        <section class="row row-cols-3 d-flex flex-wrap product-sec w-100">
+        <section class="row row-cols-3 d-flex justify-content-center product-sec w-100">
             <!-- images div -->
-            <div class="imags-div col-1">
+            <div class="imags-div col-1 d-none d-md-flex flex-column">
                 <div class="d-flex justify-content-center">
                     <a href="">
                         <img class="w-100 p-img" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/31KUAop6x6L._AC_SX466_.jpg" alt="">
@@ -275,13 +275,52 @@
 
 
             <!-- product details -->
-            <div class="item-details col-8 row row-cols-2">
-                <div class="col-7  d-flex align-items-start pt-5" >
+            <div class="item-details col-12 col-md-8 row row-cols-2">
+
+                <div class="col-md-7 col-12  d-flex align-items-start pt-5" >
                     <img class="w-100" id="desplayed-img" src="https://m.media-amazon.com/images/I/31KUAop6x6L._AC_SX466_.jpg" alt="">
                 </div>
 
-
-                <div class="col-5">
+                <div class="imags-div col-12 d-flex d-md-none">
+                    <div class="d-flex justify-content-center">
+                        <a href="">
+                            <img class="w-100 p-img" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/31KUAop6x6L._AC_SX466_.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="">
+    
+                            <img class="w-100 p-img" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/31L5t5PRuZL._AC_SX466_.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="">
+                            <img class="w-100" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/311wmWAZq8L._AC_SX466_.jpg" alt="">
+    
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="">
+                            <img class="w-100" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/21gcxMSlrXL._AC_SX466_.jpg" alt="">
+    
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="">
+                            <img class="w-100" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/21wkvE+GkjL._AC_SX466_.jpg" alt="">
+    
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="">
+                            <img class="w-100" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/21MZsVL3ZIL._AC_SX466_.jpg" alt="">
+    
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-5">
+                    <hr>
                     <p class="h5">HP Laptop 15-dw3014ne - 11th Intel Core i5-1135G7, 8GB RAM, 256GB SSD, NVIDIA GeForce MX350 2GB GDDR5 dedicated Graphics, 15.6" FHD (1920 x 1080) micro-edge, anti-glare 250 nits, Dos - Natural silver</p>
                     <a href="#" class="brand-style">Brand: HP</a>
                     <div class="rate-img d-flex">
@@ -289,6 +328,7 @@
                             <img class="w-100" src="images/PngItem_2656802.png" alt="">
                             
                         </div>
+                        
                         <div class="ps-1 pe-3">
                             <i class="fa fa-caret-down d-rate" aria-hidden="true"></i>
                         </div>
@@ -442,7 +482,7 @@
 
 
             <!-- payment info -->
-            <div class="payment-div col-3">
+            <div class="payment-div ms-3 col-12 col-md-3">
                 <div class="d-flex justify-content-center">
                     <span> Share: </span>
                     <div>
@@ -854,80 +894,7 @@
 
 
         <hr>
-        <!-- other item -->
-        <section class="other-items-viewed">
-            <!-- header -->
-            <div class="cust-sec-header d-flex justify-content-between">
-                <p class="h5">What other items do customers buy after viewing this item?</p>
-                <p class="small-txt">Page 1 of 12</p>
-            </div>
-            <!-- slider -->
-            <div class="items-slider row row-cols-3 w-100">
-                <div class="col-1 d-flex justify-content-center align-items-center">
-                    <a href="" class="slider-btn">
-                        <i class="fa fa-caret-left text-dark" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-
-                <div class="col-10">
-                    <div class="w-100 d-flex justify-content-around align-items-center cards-div">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/I/41HVQUl59YS._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="" class="brand-style">Hp</a></h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/41kE3yE0CZL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/31L5t5PRuZL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/81QGhmhCNuL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/41k3RHQTZKL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-
-                <div class="col-1 d-flex justify-content-center align-items-center">
-                    <a href="" class="slider-btn">
-                        <i class="fa fa-caret-right text-dark" aria-hidden="true"></i>
-                    </a>
-                </div>
-                
-
-
-            </div>
-        </section>
+        
 
 
         <!-- have a quation section -->
