@@ -226,16 +226,16 @@
                 </a>
             </div>
         </header>
-        
+
         <div class="back-to-results">
             <i class="fa fa-caret-left" aria-hidden="true"></i>
             <a href="#">Back to results</a>
         </div>
-        
+
         <!-- product section -->
-        <section class="row row-cols-3 product-sec w-100">
+        <section class="row row-cols-3 d-flex flex-wrap product-sec w-100">
             <!-- images div -->
-            <div class="imags-div col-1 d-flex flex-column">
+            <div class="imags-div col-1">
                 <div class="d-flex justify-content-center">
                     <a href="">
                         <img class="w-100 p-img" onmouseover="changeImg(this.src)" src="https://m.media-amazon.com/images/I/31KUAop6x6L._AC_SX466_.jpg" alt="">
@@ -550,27 +550,28 @@
 
         </section>
         <hr>
-
         <!-- buy it with -->
         <section class="buy-it-with-sec">
             <div>
                 <p class="h3">Buy it with</p>
             </div>
 
-            <div class="d-flex ms-3">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/31KUAop6x6L._AC_UL116_SR116,116_.jpg" alt="">
-                <p class="fs-1 align-self-center">+</p>
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/61pUul1oDlL._AC_UL116_SR116,116_.jpg" alt="">
-                <p class="fs-1 align-self-center">+</p>
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/61yo4swj-PL._AC_UL116_SR116,116_.jpg" alt="">
-                <div class="ms-4">
+            <div class="ms-3 d-md-flex">
+                <div class="d-flex">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/31KUAop6x6L._AC_UL116_SR116,116_.jpg" alt="">
+                    <p class="fs-1 align-self-center">+</p>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61pUul1oDlL._AC_UL116_SR116,116_.jpg" alt="">
+                    <p class="fs-1 align-self-center">+</p>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61yo4swj-PL._AC_UL116_SR116,116_.jpg" alt="">
+                </div>
+                <div class="ms-4 d-flex d-md-block">
                     <p>
                         Total price:
                         
                         <span class="small-text text-danger">EGP 12,441.90</span> 
                     </p>
 
-                    <button class="bg-warning all-three">add all three to cart</button>
+                    <button class="bg-warning all-three ms-1">add all three to cart</button>
                 </div>
             </div>
 
@@ -625,8 +626,8 @@
                 <p class="p-info-tilte h5">Product information</p>
             </div>
 
-            <div class="row row-cols-2 w-100 d-flex justify-content-center">
-                <div class="col-5">
+            <div class="row row-cols-md-2 flex-wrap w-100 d-flex justify-content-center">
+                <div class="col-md-5">
                     <p class="h6">Technical Details</p>
                     <hr>
                     <div class="technical-table-div">
@@ -700,7 +701,7 @@
                        </table>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5 mt-5 mt-md-0">
                     <div>
                         <p class="h6">Additional Information</p>
                     </div>
@@ -735,84 +736,122 @@
 
         </section>
 
-        
-
-        <!-- customers who viewed this item section -->
-        <section class="customers-viewed">
-            <hr>
-            <!-- header -->
-            <div class="cust-sec-header d-flex justify-content-between">
-                <p class="h5">Customers who viewed this item also viewed</p>
-                <p class="small-txt">Page 1 of 12</p>
+        <!-- product information -->
+        <section class="product-info">
+            <div>
+                <p class="p-info-tilte h5">Product information</p>
             </div>
-            <!-- slider -->
-            <div class="items-slider row row-cols-3 w-100">
-                <div class="col-1 d-flex justify-content-center align-items-center">
-                    <a href="" class="slider-btn">
-                        <i class="fa fa-caret-left text-dark" aria-hidden="true"></i>
-                    </a>
-                </div>
 
-
-                <div class="col-10">
-                    <div class="w-100 d-flex justify-content-around align-items-center cards-div">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="https://images-eu.ssl-images-amazon.com/images/I/41HVQUl59YS._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="" class="brand-style">HP 250 G7 Laptop, 10th Generation Intel Core i7-1065G7, 8 GB RAM, 1TB HDD, Intel Iris Plus Graphics, 15.6 Inch HD anti-glare 220 nits, Windows 10 - Dark ash silver
-                                    3.5 out of 5 stars</a></h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/41kE3yE0CZL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/31L5t5PRuZL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/81QGhmhCNuL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/41k3RHQTZKL._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
+            <div class="row row-cols-md-2 flex-wrap w-100 d-flex justify-content-center">
+                <div class="col-md-5">
+                    <p class="h6">Technical Details</p>
+                    <hr>
+                    <div class="technical-table-div">
+                       <table>
+                           <th>Brand</th>
+                           <th>HP</th>
+                           <tr>
+                               <td>Product Dimensions</td>
+                               <td>35.85 x 24.2 x 1.99 cm; 1.75 Kilograms</td>
+                           </tr>
+                           <tr>
+                               <td>Batteries</td>
+                               <td>1 Lithium ion batteries required. (included)</td>
+                           </tr>
+                           <tr>
+                               <td>Item model number</td>
+                               <td>15-dw1014ne</td>
+                           </tr>
+                           <tr>
+                               <td>Manufacturer</td>
+                               <td>hp</td>
+                           </tr>
+                           <tr>
+                               <td>Series</td>
+                               <td>15-dw3014ne</td>
+                           </tr>
+                           <tr>
+                               <td>Color</td>
+                               <td>Silver</td>
+                           </tr>
+                           <tr>
+                               <td>Standing screen display size</td>
+                               <td>15.6 Inches</td>
+                           </tr>
+                           <tr>
+                               <td>Resolution</td>
+                               <td>1920 x 1080 Pixels</td>
+                           </tr>
+                           <tr>
+                            <td>Processor Brand</td>
+                            <td>Intel</td>
+                        </tr>
+                        ]<tr>
+                            <td>Processor Type</td>
+                            <td>Intel Core i5</td>
+                        </tr>
+                        <tr>
+                            <td>Processor Speed</td>
+                            <td>2.4 GHz</td>
+                        </tr>
+                        <tr>
+                            <td>Processor Count</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Memory Technology</td>
+                            <td>DDR4</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Memory Type</td>
+                            <td>DDR4 SDRAM</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Memory Supported</td>
+                            <td>8 MB</td>
+                        </tr>
+                        <tr>
+                            <td>Memory Clock Speed</td>
+                            <td>2666 MHz</td>
+                        </tr>
+                       </table>
                     </div>
                 </div>
+                <div class="col-md-5 mt-5 mt-md-0">
+                    <div>
+                        <p class="h6">Additional Information</p>
+                    </div>
+                    <hr>
+                    <div class="technical-table-div">
+                        <table>
+                            <th>ASIN</th>
+                            <th>B09J7W71F9</th>
+                            
+                            <tr>
+                                <td>Date First Available</td>
+                                <td>12 October 2021</td>
+                            </tr>
+                            
+                        </table>
+                        <div>
+                            <p class="h5">Warranty & Support</p>
 
-
-                <div class="col-1 d-flex justify-content-center align-items-center">
-                    <a href="" class="slider-btn">
-                        <i class="fa fa-caret-right text-dark" aria-hidden="true"></i>
-                    </a>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="small-txt">
+                                amazon.eg Return Policy:Regardless of your statutory right of withdrawal, you enjoy a 15-30 day right of return for most products. For exceptions and conditions, see 
+                                <a href="#" class="brand-style">Return details.</a>
+                            </p>
+                        </div>
+                     </div>
                 </div>
-                
-
 
             </div>
+            
+
         </section>
+
 
         <hr>
         <!-- other item -->
@@ -838,8 +877,7 @@
                             <img src="https://images-eu.ssl-images-amazon.com/images/I/41HVQUl59YS._AC_UL160_SR160,160_.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a href="" class="brand-style">HP 250 G7 Laptop, 10th Generation Intel Core i7-1065G7, 8 GB RAM, 1TB HDD, Intel Iris Plus Graphics, 15.6 Inch HD anti-glare 220 nits, Windows 10 - Dark ash silver
-                                    3.5 out of 5 stars</a></h5>
+                                    <a href="" class="brand-style">Hp</a></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -892,7 +930,6 @@
         </section>
 
 
-
         <!-- have a quation section -->
         <section class="have-q-sec ps-3">
             <hr>
@@ -905,9 +942,10 @@
             </div>
             <div class="inpt-w-search row row-cols-2 d-flex">
                 <i class="fa fa-search col-1" aria-hidden="true"></i>
-                <input type="text" name="input-text" class="q-input col-11" id="">
+                <input type="text" name="input-text" class="q-input ms-3 ms-md-0 col-md-11" id="">
             </div>
         </section>
+
 
         <!-- product description -->
         <section class="product-desc">
@@ -923,284 +961,265 @@
             </div>
         </section>
 
-
-
         <!-- From the manufacturer -->
         <section class="manufacturer">
-             <hr>
-            <!-- header -->
-            <div class="cust-sec-header">
-                <p class="h5">From the manufacturer</p>
-            </div>
-            <div class="w-100">
-                <img src="https://m.media-amazon.com/images/S/aplus-media/sota/7ee98c50-a581-4304-b5ee-86b4394c589f.__CR0,0,600,180_PT0_SX600_V1___.jpg" class="w-100" alt="">
-            </div>
+            <hr>
+           <!-- header -->
+           <div class="cust-sec-header">
+               <p class="h5">From the manufacturer</p>
+           </div>
+
+           <div class="w-100">
+               <img src="https://m.media-amazon.com/images/S/aplus-media/sota/7ee98c50-a581-4304-b5ee-86b4394c589f.__CR0,0,600,180_PT0_SX600_V1___.jpg" class="w-100" alt="">
+           </div>
 
 
-            <div class="w-100 row row-cols-2 d-flex justify-content-center">
-                <div class="col-4">
-                    <img src="https://m.media-amazon.com/images/S/aplus-media/sota/3f836c8b-0ba1-4d19-a1f4-1895a0809437.__CR0,0,300,300_PT0_SX300_V1___.jpg" class="w-100" alt="">
+           <div class="w-100 row row-cols-2 d-flex justify-content-center">
+               <div class="col-4">
+                   <img src="https://m.media-amazon.com/images/S/aplus-media/sota/3f836c8b-0ba1-4d19-a1f4-1895a0809437.__CR0,0,300,300_PT0_SX300_V1___.jpg" class="w-100" alt="">
+               </div>
+               <div class="col-6 align-self-center">
+                   <p class="h6">HP Laptop 15-dw3014ne</p>
+                   <p class="small-txt">Stay connected to what matters most with a long-lasting battery life and a sleek and portable, micro-edge bezel design. Built to keep you productive and entertained from anywhere, the HP 39.6 cm (15.6”) laptop features reliable performance and an expansive display - letting you stream, surf and speed through tasks from sun up to sun down.</p>
+               </div>
+
+           </div>
+
+           <div class="w-100 row row-cols-xlg-3 p-5">
+               <div class="col">
+                   <img src="https://m.media-amazon.com/images/S/aplus-media/sota/bab83e42-6375-482c-84dc-333322a669f6.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
+                   <p>See more. Take it anywhere.
+                       With its 6.5 mm micro-edge bezel display, slim and light design, plus 81% screen to body ratio – this PC lets you see more and do more, no matter where the day takes you.</p>
+               </div>
+
+               <div class="col">
+                   <img src="https://m.media-amazon.com/images/S/aplus-media/sota/7b5faa6b-9990-479f-ba35-7d892023f966.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
+                   <p>Reliable performance for every day
+                       Tackle your busiest days with the performance of an Intel processor and advanced graphics. Store more of what you love with abundant storage</p>
+               </div>
+
+               <div class="col">
+                   <img src="https://m.media-amazon.com/images/S/aplus-media/sota/2bad48e7-ef53-4503-a1d5-0eb70de2ecfe.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
+                   <p>Powered up and productive. All day long.
+                       With long-lasting battery life and HP Fast Charge technology, this laptop lets you work, watch, and stay connected. Integrated precision touchpad with multi-touch support speeds up both navigation and productivity.</p>
+               </div>
+
+           </div>
+
+           <div class="w-100">
+               <img src="https://m.media-amazon.com/images/S/aplus-media/sota/a577ef0e-11d9-4474-bfec-6dfe15e9d6d2.__CR0,0,970,600_PT0_SX970_V1___.jpg" class="w-100" alt="">
+           </div>
+
+           <div class="container">
+               <div>
+                   <p class="h6">Exceptional experience, anywhere</p>
+                   <p>11th Gen Intel Core processors bring the perfect combination of features to make you unstoppable. Get things done fast with high performance, instant responsiveness and connectivity.</p>
+               </div>
+               <div>
+                   <p class="h6">NVIDIA GeForce MX350 graphics</p>
+                   <p>Supercharge your PC for work and play. Get higher graphics performance for smooth gaming and accelerated editing, maximized battery and performance with NVIDIA Optimus Technology, while GeForce Experience enables capturing and sharing videos, driver updates, and live streaming of games- allowing you to do it all.</p>
+               </div>
+               <div>
+                   <p class="h6">Full HD display</p>
+                   <p>Sit back and enjoy crystal-clear visuals and images with the vibrant quality of 2 million pixels. The 1920 x 1080 resolution gives all your digital content a new dimension.</p>
+               </div>
+           </div>
+
+           <div class="w-100">
+               <img src="https://m.media-amazon.com/images/S/aplus-media/sota/a57f0f7c-4015-4a23-a143-f5d2b7f6e572.__CR0,0,970,600_PT0_SX970_V1___.jpg" class="w-100" alt="">
+           </div>
+
+           <div class="container">
+               <ul>
+                   <li>Anti-glare panel: Enjoy the sun and your favorite content with this anti-glare panel. Non-reflective and low gloss means you'll get less glare while you're outside.</li>
+                   <li>PCIe SSD storage: Boot up in seconds with lightning fast speed with up to 512 GB PCIe SSD storage.</li>
+                   <li>Wi-Fi 5 (1x1) & Bluetooth 4.2 (802.11a/b/g/n/ac): Stay connected to Wi-Fi and to Bluetooth accessories with wireless technology.</li>
+                   <li>MU-MIMO supported: If you have several MU-MIMO devices in your home, MU-MIMO support works in combination with a MU-MIMO router to maximize network traffic for a smoother online experience. </li>
+                   <li>Dual channel memory: With dual channel technology, two channels work simultaneously to double the communication speed between the memory controller and the RAM increasing system performance.</li>
+                   <li>SuperSpeed USB Type-C 5Gbps signaling data rate: Plug in your external storage with this SuperSpeed USB Type-C port, featuring 5Gbps signaling data rate. And it’s reversible, so you never have to worry about plugging in upside down.</li>
+                   <li>SD and Micro SD card reader: Simply insert an SD or Micro SD card and increase your device’s storage for more movies, photos, and music, or easily access any content you have stored on an existing card.</li>
+                   <li>Full-size keyboard with integrated numeric keypad: The full-sized keyboard with integrated numeric keypad allows you to comfortably type and increase productivity with 1.5mm key travel.</li>
+                   <li>HP True Vision HD Camera: Video chat in vibrant clarity, even in low light and make every conversation a face-to-face experience for a better way to stay in touch.</li>
+                   <li>Micro-edge display: See more of your screen with a micro-edge display that maximizes your viewing area.</li>
+                   <li>Dual speakers: Pump up the volume to your favorite music, movie or game with dual-stereo speakers.</li>
+               </ul>
+           </div>
+       </section>
+
+
+
+       <!-- customer questions & answers -->
+       <section class="cust-q-a">
+        <hr>
+        <!-- header -->
+        <div class="cust-sec-header">
+            <p class="h5" style="color: #cc6600;">Customer questions & answers</p>
+        </div>
+        
+        <div class="inpt-w-search row row-cols-2 d-flex ms-1">
+            <i class="fa fa-search col-1" aria-hidden="true"></i>
+            <input type="text" name="input-text" class="q-input ms-3 ms-md-0 col-md-11" id="">
+        </div>
+
+        <div>
+
+            <div class="d-flex ps-1">
+                <div class="d-flex justfiy-content-center flex-column m-4">
+                    <i class="fa fa-caret-up fs-4" aria-hidden="true"></i>
+                    <p class="fs-3">0</p>
+                    <i class="fa fa-caret-down fs-4" aria-hidden="true"></i>
                 </div>
-                <div class="col-6 align-self-center">
-                    <p class="h6">HP Laptop 15-dw3014ne</p>
-                    <p class="small-txt">Stay connected to what matters most with a long-lasting battery life and a sleek and portable, micro-edge bezel design. Built to keep you productive and entertained from anywhere, the HP 39.6 cm (15.6”) laptop features reliable performance and an expansive display - letting you stream, surf and speed through tasks from sun up to sun down.</p>
-                </div>
-
-            </div>
-
-            <div class="w-100 row row-cols-3 p-5">
-                <div class="col">
-                    <img src="https://m.media-amazon.com/images/S/aplus-media/sota/bab83e42-6375-482c-84dc-333322a669f6.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
-                    <p>See more. Take it anywhere.
-                        With its 6.5 mm micro-edge bezel display, slim and light design, plus 81% screen to body ratio – this PC lets you see more and do more, no matter where the day takes you.</p>
-                </div>
-
-                <div class="col">
-                    <img src="https://m.media-amazon.com/images/S/aplus-media/sota/7b5faa6b-9990-479f-ba35-7d892023f966.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
-                    <p>Reliable performance for every day
-                        Tackle your busiest days with the performance of an Intel processor and advanced graphics. Store more of what you love with abundant storage</p>
-                </div>
-
-                <div class="col">
-                    <img src="https://m.media-amazon.com/images/S/aplus-media/sota/2bad48e7-ef53-4503-a1d5-0eb70de2ecfe.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
-                    <p>Powered up and productive. All day long.
-                        With long-lasting battery life and HP Fast Charge technology, this laptop lets you work, watch, and stay connected. Integrated precision touchpad with multi-touch support speeds up both navigation and productivity.</p>
-                </div>
-
-            </div>
-
-            <div class="w-100">
-                <img src="https://m.media-amazon.com/images/S/aplus-media/sota/a577ef0e-11d9-4474-bfec-6dfe15e9d6d2.__CR0,0,970,600_PT0_SX970_V1___.jpg" class="w-100" alt="">
-            </div>
-
-            <div class="container">
-                <div>
-                    <p class="h6">Exceptional experience, anywhere</p>
-                    <p>11th Gen Intel Core processors bring the perfect combination of features to make you unstoppable. Get things done fast with high performance, instant responsiveness and connectivity.</p>
-                </div>
-                <div>
-                    <p class="h6">NVIDIA GeForce MX350 graphics</p>
-                    <p>Supercharge your PC for work and play. Get higher graphics performance for smooth gaming and accelerated editing, maximized battery and performance with NVIDIA Optimus Technology, while GeForce Experience enables capturing and sharing videos, driver updates, and live streaming of games- allowing you to do it all.</p>
-                </div>
-                <div>
-                    <p class="h6">Full HD display</p>
-                    <p>Sit back and enjoy crystal-clear visuals and images with the vibrant quality of 2 million pixels. The 1920 x 1080 resolution gives all your digital content a new dimension.</p>
+                <div class="v-line mt-4 mb-5"></div>
+                <div class="m-5">
+                    <ul>
+                        <li class="d-flex">
+                            <p class="bold-txt pe-5">Question:</p>
+                            <p class="brand-style">هل الكيبورد backlit ?</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="bold-txt pe-5">Answer:</p>
+                            <p class="brand-style">yes
+                                By Amazon Customer on February 20, 2022</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="w-100">
-                <img src="https://m.media-amazon.com/images/S/aplus-media/sota/a57f0f7c-4015-4a23-a143-f5d2b7f6e572.__CR0,0,970,600_PT0_SX970_V1___.jpg" class="w-100" alt="">
+
+            <div class="d-flex ps-1">
+                <div class="d-flex justfiy-content-center flex-column m-4">
+                    <i class="fa fa-caret-up fs-4" aria-hidden="true"></i>
+                    <p class="fs-3">0</p>
+                    <i class="fa fa-caret-down fs-4" aria-hidden="true"></i>
+                </div>
+                <div class="v-line mt-4 mb-5"></div>
+                <div class="m-5">
+                    <ul>
+                        <li class="d-flex">
+                            <p class="bold-txt pe-5">Question:</p>
+                            <p class="brand-style">هل الكيبورد backlit ?</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="bold-txt pe-5">Answer:</p>
+                            <p class="brand-style">yes
+                                By Amazon Customer on February 20, 2022</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="container">
-                <ul>
-                    <li>Anti-glare panel: Enjoy the sun and your favorite content with this anti-glare panel. Non-reflective and low gloss means you'll get less glare while you're outside.</li>
-                    <li>PCIe SSD storage: Boot up in seconds with lightning fast speed with up to 512 GB PCIe SSD storage.</li>
-                    <li>Wi-Fi 5 (1x1) & Bluetooth 4.2 (802.11a/b/g/n/ac): Stay connected to Wi-Fi and to Bluetooth accessories with wireless technology.</li>
-                    <li>MU-MIMO supported: If you have several MU-MIMO devices in your home, MU-MIMO support works in combination with a MU-MIMO router to maximize network traffic for a smoother online experience. </li>
-                    <li>Dual channel memory: With dual channel technology, two channels work simultaneously to double the communication speed between the memory controller and the RAM increasing system performance.</li>
-                    <li>SuperSpeed USB Type-C 5Gbps signaling data rate: Plug in your external storage with this SuperSpeed USB Type-C port, featuring 5Gbps signaling data rate. And it’s reversible, so you never have to worry about plugging in upside down.</li>
-                    <li>SD and Micro SD card reader: Simply insert an SD or Micro SD card and increase your device’s storage for more movies, photos, and music, or easily access any content you have stored on an existing card.</li>
-                    <li>Full-size keyboard with integrated numeric keypad: The full-sized keyboard with integrated numeric keypad allows you to comfortably type and increase productivity with 1.5mm key travel.</li>
-                    <li>HP True Vision HD Camera: Video chat in vibrant clarity, even in low light and make every conversation a face-to-face experience for a better way to stay in touch.</li>
-                    <li>Micro-edge display: See more of your screen with a micro-edge display that maximizes your viewing area.</li>
-                    <li>Dual speakers: Pump up the volume to your favorite music, movie or game with dual-stereo speakers.</li>
-                </ul>
-            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-sec pb-5">
+            
+        <section class="w-100 d-flex justify-content-center">
+            <button class="back-to-top small-txt">
+                Back to Top
+            </button>
         </section>
 
-
-
-
-
-        <!-- customer questions & answers -->
-        <section class="cust-q-a">
-            <hr>
-            <!-- header -->
-            <div class="cust-sec-header">
-                <p class="h5" style="color: #cc6600;">Customer questions & answers</p>
-            </div>
-            
-            <div class="inpt-w-search row row-cols-2 d-flex ms-5 mt-5">
-                <i class="fa fa-search col-1" aria-hidden="true"></i>
-                <input type="text" name="input-text" class="q-input col-11" id="">
+        <section class="w-100 text-light d-flex justify-content-center algin-items-center about-amazon-sec">
+            <div>
+                <p>Get to Know Us</p>
+                <p>
+                    <a href="" class="text-light small-txt">About Amazon</a>
+                </p>
+                <p>
+                    <a href="" class="text-light small-txt">Careers</a>
+                </p>
             </div>
 
             <div>
+                <p>Shop with Us</p>
+                <p>
+                    <a href="" class="text-light small-txt">Your Account</a>
+                </p>
+                <p>
+                    <a href="" class="text-light small-txt">Your Orders</a>
+                </p>
 
-                <div class="d-flex ps-5">
-                    <div class="d-flex justfiy-content-center flex-column m-4">
-                        <i class="fa fa-caret-up fs-4" aria-hidden="true"></i>
-                        <p class="fs-3">0</p>
-                        <i class="fa fa-caret-down fs-4" aria-hidden="true"></i>
-                    </div>
-                    <div class="v-line mt-4 mb-5"></div>
-                    <div class="m-5">
-                        <ul>
-                            <li class="d-flex">
-                                <p class="bold-txt pe-5">Question:</p>
-                                <p class="brand-style">هل الكيبورد backlit ?</p>
-                            </li>
-                            <li class="d-flex">
-                                <p class="bold-txt pe-5">Answer:</p>
-                                <p class="brand-style">yes
-                                    By Amazon Customer on February 20, 2022</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <p>
+                    <a href="" class="text-light small-txt">Your Addresses</a>
+                </p>
 
-
-                <div class="d-flex ps-5">
-                    <div class="d-flex justfiy-content-center flex-column m-4">
-                        <i class="fa fa-caret-up fs-4" aria-hidden="true"></i>
-                        <p class="fs-3">0</p>
-                        <i class="fa fa-caret-down fs-4" aria-hidden="true"></i>
-                    </div>
-                    <div class="v-line mt-4 mb-5"></div>
-                    <div class="m-5">
-                        <ul>
-                            <li class="d-flex">
-                                <p class="bold-txt pe-5">Question:</p>
-                                <p class="brand-style">هل الكيبورد backlit ?</p>
-                            </li>
-                            <li class="d-flex">
-                                <p class="bold-txt pe-5">Answer:</p>
-                                <p class="brand-style">yes
-                                    By Amazon Customer on February 20, 2022</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+                <p>
+                    <a href="" class="text-light small-txt">Your Lists</a>
+                </p>
             </div>
+
+            <div>
+                <p>Make Money with Us</p>
+                <p>
+                    <a href="" class="text-light small-txt">Sell on Amazon</a>
+                </p>
+                <p>
+                    <a href="" class="text-light small-txt">Fulfillment by Amazon</a>
+                </p>
+            </div>
+
+            <div>
+                <p>Let Us Help You</p>
+                <p>
+                    <a href="" class="text-light small-txt">Help</a>
+                </p>
+                <p>
+                    <a href="" class="text-light small-txt">Shipping & Delivery</a>
+                </p>
+
+                <p>
+                    <a href="" class="text-light small-txt">Returns & Replacements</a>
+                </p>
+
+                <p>
+                    <a href="" class="text-light small-txt">Amazon App Download</a>
+                </p>
+            </div>
+
         </section>
 
-        <!-- customer reviews -->
-        <!-- <section class="cust-reviews">
-            cust-reviews
-        </section> -->
+        <hr style="border: 1px solid white;">
 
-        <!-- best seller in categries -->
-        <!-- <section class="best-seller-sec">
-            best seller
-        </section> -->
-
-        <!-- sing in section -->
-        <!-- <section class="sing-in-sec">
-            sing in section
-        </section> -->
-
-
-        <!-- footer -->
-        <footer class="footer-sec pb-5">
-            
-            <section class="w-100 d-flex justify-content-center">
-                <button class="back-to-top small-txt">
-                    Back to Top
-                </button>
-            </section>
-
-            <section class="w-100 text-light d-flex justify-content-center algin-items-center about-amazon-sec">
-                <div>
-                    <p>Get to Know Us</p>
-                    <p>
-                        <a href="" class="text-light small-txt">About Amazon</a>
-                    </p>
-                    <p>
-                        <a href="" class="text-light small-txt">Careers</a>
-                    </p>
-                </div>
-
-                <div>
-                    <p>Shop with Us</p>
-                    <p>
-                        <a href="" class="text-light small-txt">Your Account</a>
-                    </p>
-                    <p>
-                        <a href="" class="text-light small-txt">Your Orders</a>
-                    </p>
-
-                    <p>
-                        <a href="" class="text-light small-txt">Your Addresses</a>
-                    </p>
-
-                    <p>
-                        <a href="" class="text-light small-txt">Your Lists</a>
-                    </p>
-                </div>
-
-                <div>
-                    <p>Make Money with Us</p>
-                    <p>
-                        <a href="" class="text-light small-txt">Sell on Amazon</a>
-                    </p>
-                    <p>
-                        <a href="" class="text-light small-txt">Fulfillment by Amazon</a>
-                    </p>
-                </div>
-
-                <div>
-                    <p>Let Us Help You</p>
-                    <p>
-                        <a href="" class="text-light small-txt">Help</a>
-                    </p>
-                    <p>
-                        <a href="" class="text-light small-txt">Shipping & Delivery</a>
-                    </p>
-
-                    <p>
-                        <a href="" class="text-light small-txt">Returns & Replacements</a>
-                    </p>
-
-                    <p>
-                        <a href="" class="text-light small-txt">Amazon App Download</a>
-                    </p>
-                </div>
-
-            </section>
-
-            <hr style="border: 1px solid white;">
-
-            <section class="w-100 pt-4 text-light d-flex justify-content-center algin-items-center">
+        <section class="w-100 pt-4 text-light d-flex justify-content-center algin-items-center">
+                <a href="">
+                <div class="f-amazon-img">
                     <a href="">
-                    <div class="f-amazon-img">
-                        <a href="">
-                            <img src="images/amazon_w-logo.png" class="w-100" alt="">
-                        </a>
-                    </div>
+                        <img src="images/amazon_w-logo.png" class="w-100" alt="">
                     </a>
+                </div>
+                </a>
 
-                    <div class="s-2-div ms-5 d-flex">
-                            
-                            <div class="f-en-arb-div d-flex align-items-center p-1">
-                                <i class="fa-solid fa-globe me-2"></i>
+                <div class="s-2-div ms-5 d-flex">
+                        
+                        <div class="f-en-arb-div d-flex align-items-center p-1">
+                            <i class="fa-solid fa-globe me-2"></i>
+                            <a href="" class="small-txt me-2 eng-egy">
+                            English
+                            </a>
+                            <i class="fa-solid fa-up-down"></i>
+                        </div>
+                        
+
+                        
+                        <div class="f-en-arb-div ms-2 d-flex p-1 justify-content-around algin-items-center pt-1">
+                            <div class="flag-footer">
+                                <img src="images/Flag_of_Egypt.png" class="w-100" alt="">
+                            </div>
+                            <div>
                                 <a href="" class="small-txt me-2 eng-egy">
-                                English
-                                </a>
-                                <i class="fa-solid fa-up-down"></i>
+                                    Eygpt
+                                    </a>
                             </div>
-                            
-
-                            
-                            <div class="f-en-arb-div ms-2 d-flex p-1 justify-content-around algin-items-center pt-1">
-                                <div class="flag-footer">
-                                    <img src="images/Flag_of_Egypt.png" class="w-100" alt="">
-                                </div>
-                                <div>
-                                    <a href="" class="small-txt me-2 eng-egy">
-                                        Eygpt
-                                        </a>
-                                </div>
-                            </div>
-                        
-                        
+                        </div>
+                    
+                    
 
 
-                    </div>
-            </section>
+                </div>
+        </section>
 
-        </footer>
+    </footer>
 
 
     </div>
