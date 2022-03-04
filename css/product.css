@@ -50,6 +50,12 @@
   display: flex;
   justify-content: center;
 }
+
+.nav2-div a {
+  text-align: center;
+  margin: 0% 1%;
+  font-size: 0.8rem;
+}
 .nav2-div:hover {
   border: 1px solid white;
 }
